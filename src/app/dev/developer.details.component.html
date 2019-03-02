@@ -1,0 +1,8 @@
+<div *ngIf="currentSelectedItem">
+	<h2>Selected Developer</h2>
+
+	<h3>{{ currentSelectedItem.name }}</h3>
+	<input type="text" [(ngModel)]="currentSelectedItem.skill">
+
+	<button (click)="updateSkill()">Update Skill</button>
+</div>

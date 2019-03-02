@@ -1,0 +1,13 @@
+
+
+<div style="border: red solid 1px;margin: 10px; padding: 10px;">
+
+	<h1>Counter Value: <span>{{count}}</span></h1>
+
+	<button class="btn btn-success" (click)="increment()">Increment</button>
+
+
+	<child-component (update) = "updateInParent($event)" [counter] = "count"></child-component>
+
+</div>
+

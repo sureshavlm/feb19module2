@@ -1,0 +1,9 @@
+
+<div>
+	<h2>Developers: </h2>
+	<ul *ngFor="let developer of developers">
+		<li (click)="selectDeveloper(developer)"> {{ developer.name }} - {{ developer.skill }}</li>
+	</ul>
+
+	<developer-details (updateDeveloper)="updateInParent($event)" [currentSelectedItem] = "selectedDeveloper"></developer-details>
+</div>
